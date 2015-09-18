@@ -1,0 +1,637 @@
+!SESSION 2015-09-14 16:20:28.460 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_51
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY phasereditor.assetpack.core 4 0 2015-09-14 16:20:29.402
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: phasereditor.assetpack.core [230]
+  Unresolved requirement: Require-Bundle: org.json; bundle-version="1.0.0"
+    -> Bundle-SymbolicName: org.json; bundle-version="1.0.0.201509022159"
+       org.json [221]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY phasereditor.assetpack.ui 4 0 2015-09-14 16:20:29.403
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: phasereditor.assetpack.ui [231]
+  Unresolved requirement: Require-Bundle: phasereditor.assetpack.core; bundle-version="1.0.0"
+    -> Bundle-SymbolicName: phasereditor.assetpack.core; bundle-version="1.0.0.201509022159"; singleton:="true"
+       phasereditor.assetpack.core [230]
+         Unresolved requirement: Require-Bundle: org.json; bundle-version="1.0.0"
+           -> Bundle-SymbolicName: org.json; bundle-version="1.0.0.201509022159"
+              org.json [221]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY phasereditor.atlas.core 4 0 2015-09-14 16:20:29.405
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: phasereditor.atlas.core [232]
+  Unresolved requirement: Require-Bundle: org.json; bundle-version="1.0.0"
+    -> Bundle-SymbolicName: org.json; bundle-version="1.0.0.201509022159"
+       org.json [221]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY phasereditor.atlas.ui 4 0 2015-09-14 16:20:29.408
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: phasereditor.atlas.ui [233]
+  Unresolved requirement: Require-Bundle: phasereditor.project.core; bundle-version="1.0.0"
+    -> Bundle-SymbolicName: phasereditor.project.core; bundle-version="1.0.0.201509022159"; singleton:="true"
+       phasereditor.project.core [246]
+         Unresolved requirement: Require-Bundle: phasereditor.inspect.core; bundle-version="1.0.0"
+           -> Bundle-SymbolicName: phasereditor.inspect.core; bundle-version="1.0.0.201509022159"; singleton:="true"
+              phasereditor.inspect.core [241]
+                Unresolved requirement: Require-Bundle: phasereditor.inspect.core.resources; bundle-version="1.0.0"
+                  -> Bundle-SymbolicName: phasereditor.inspect.core.resources; bundle-version="1.0.0.201509022159"
+                     phasereditor.inspect.core.resources [242]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY phasereditor.audio.core 4 0 2015-09-14 16:20:29.411
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: phasereditor.audio.core [234]
+  Unresolved requirement: Require-Bundle: phasereditor.ui; bundle-version="1.0.0"
+    -> Bundle-SymbolicName: phasereditor.ui; bundle-version="1.0.0.201509022159"; singleton:="true"
+       phasereditor.ui [249]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY phasereditor.audiosprite.core 4 0 2015-09-14 16:20:29.415
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: phasereditor.audiosprite.core [236]
+  Unresolved requirement: Require-Bundle: org.json; bundle-version="1.0.0"
+    -> Bundle-SymbolicName: org.json; bundle-version="1.0.0.201509022159"
+       org.json [221]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY phasereditor.audiosprite.ui 4 0 2015-09-14 16:20:29.418
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: phasereditor.audiosprite.ui [237]
+  Unresolved requirement: Require-Bundle: phasereditor.audio.core; bundle-version="1.0.0"
+    -> Bundle-SymbolicName: phasereditor.audio.core; bundle-version="1.0.0.201509022159"
+       phasereditor.audio.core [234]
+         Unresolved requirement: Require-Bundle: phasereditor.ui; bundle-version="1.0.0"
+           -> Bundle-SymbolicName: phasereditor.ui; bundle-version="1.0.0.201509022159"; singleton:="true"
+              phasereditor.ui [249]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY phasereditor.chains.core 4 0 2015-09-14 16:20:29.421
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: phasereditor.chains.core [238]
+  Unresolved requirement: Require-Bundle: phasereditor.inspect.core; bundle-version="1.0.0"
+    -> Bundle-SymbolicName: phasereditor.inspect.core; bundle-version="1.0.0.201509022159"; singleton:="true"
+       phasereditor.inspect.core [241]
+         Unresolved requirement: Require-Bundle: phasereditor.inspect.core.resources; bundle-version="1.0.0"
+           -> Bundle-SymbolicName: phasereditor.inspect.core.resources; bundle-version="1.0.0.201509022159"
+              phasereditor.inspect.core.resources [242]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY phasereditor.chains.ui 4 0 2015-09-14 16:20:29.424
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: phasereditor.chains.ui [239]
+  Unresolved requirement: Require-Bundle: phasereditor.chains.core; bundle-version="1.0.0"
+    -> Bundle-SymbolicName: phasereditor.chains.core; bundle-version="1.0.0.201509022159"
+       phasereditor.chains.core [238]
+         Unresolved requirement: Require-Bundle: phasereditor.inspect.core; bundle-version="1.0.0"
+           -> Bundle-SymbolicName: phasereditor.inspect.core; bundle-version="1.0.0.201509022159"; singleton:="true"
+              phasereditor.inspect.core [241]
+                Unresolved requirement: Require-Bundle: phasereditor.inspect.core.resources; bundle-version="1.0.0"
+                  -> Bundle-SymbolicName: phasereditor.inspect.core.resources; bundle-version="1.0.0.201509022159"
+                     phasereditor.inspect.core.resources [242]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY phasereditor.ide 4 0 2015-09-14 16:20:29.425
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: phasereditor.ide [240]
+  Unresolved requirement: Require-Bundle: phasereditor.assetpack.core; bundle-version="1.0.0"
+    -> Bundle-SymbolicName: phasereditor.assetpack.core; bundle-version="1.0.0.201509022159"; singleton:="true"
+       phasereditor.assetpack.core [230]
+         Unresolved requirement: Require-Bundle: org.json; bundle-version="1.0.0"
+           -> Bundle-SymbolicName: org.json; bundle-version="1.0.0.201509022159"
+              org.json [221]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY phasereditor.inspect.core 4 0 2015-09-14 16:20:29.427
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: phasereditor.inspect.core [241]
+  Unresolved requirement: Require-Bundle: phasereditor.inspect.core.resources; bundle-version="1.0.0"
+    -> Bundle-SymbolicName: phasereditor.inspect.core.resources; bundle-version="1.0.0.201509022159"
+       phasereditor.inspect.core.resources [242]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY phasereditor.inspect.core.resources 4 0 2015-09-14 16:20:29.429
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: phasereditor.inspect.core.resources [242]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY phasereditor.optipng.core 4 0 2015-09-14 16:20:29.431
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: phasereditor.optipng.core [243]
+  Unresolved requirement: Require-Bundle: phasereditor.ui; bundle-version="1.0.0"
+    -> Bundle-SymbolicName: phasereditor.ui; bundle-version="1.0.0.201509022159"; singleton:="true"
+       phasereditor.ui [249]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY phasereditor.optipng.ui 4 0 2015-09-14 16:20:29.433
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: phasereditor.optipng.ui [245]
+  Unresolved requirement: Require-Bundle: phasereditor.optipng.core; bundle-version="1.0.0"
+    -> Bundle-SymbolicName: phasereditor.optipng.core; bundle-version="1.0.0.201509022159"
+       phasereditor.optipng.core [243]
+         Unresolved requirement: Require-Bundle: phasereditor.ui; bundle-version="1.0.0"
+           -> Bundle-SymbolicName: phasereditor.ui; bundle-version="1.0.0.201509022159"; singleton:="true"
+              phasereditor.ui [249]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY phasereditor.project.core 4 0 2015-09-14 16:20:29.434
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: phasereditor.project.core [246]
+  Unresolved requirement: Require-Bundle: phasereditor.inspect.core; bundle-version="1.0.0"
+    -> Bundle-SymbolicName: phasereditor.inspect.core; bundle-version="1.0.0.201509022159"; singleton:="true"
+       phasereditor.inspect.core [241]
+         Unresolved requirement: Require-Bundle: phasereditor.inspect.core.resources; bundle-version="1.0.0"
+           -> Bundle-SymbolicName: phasereditor.inspect.core.resources; bundle-version="1.0.0.201509022159"
+              phasereditor.inspect.core.resources [242]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY phasereditor.project.ui 4 0 2015-09-14 16:20:29.436
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: phasereditor.project.ui [247]
+  Unresolved requirement: Require-Bundle: phasereditor.project.core; bundle-version="1.0.0"
+    -> Bundle-SymbolicName: phasereditor.project.core; bundle-version="1.0.0.201509022159"; singleton:="true"
+       phasereditor.project.core [246]
+         Unresolved requirement: Require-Bundle: phasereditor.inspect.core; bundle-version="1.0.0"
+           -> Bundle-SymbolicName: phasereditor.inspect.core; bundle-version="1.0.0.201509022159"; singleton:="true"
+              phasereditor.inspect.core [241]
+                Unresolved requirement: Require-Bundle: phasereditor.inspect.core.resources; bundle-version="1.0.0"
+                  -> Bundle-SymbolicName: phasereditor.inspect.core.resources; bundle-version="1.0.0.201509022159"
+                     phasereditor.inspect.core.resources [242]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY phasereditor.text.ui 4 0 2015-09-14 16:20:29.438
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: phasereditor.text.ui [248]
+  Unresolved requirement: Require-Bundle: phasereditor.assetpack.ui; bundle-version="1.0.0"
+    -> Bundle-SymbolicName: phasereditor.assetpack.ui; bundle-version="1.0.0.201509022159"; singleton:="true"
+       phasereditor.assetpack.ui [231]
+         Unresolved requirement: Require-Bundle: phasereditor.assetpack.core; bundle-version="1.0.0"
+           -> Bundle-SymbolicName: phasereditor.assetpack.core; bundle-version="1.0.0.201509022159"; singleton:="true"
+              phasereditor.assetpack.core [230]
+                Unresolved requirement: Require-Bundle: org.json; bundle-version="1.0.0"
+                  -> Bundle-SymbolicName: org.json; bundle-version="1.0.0.201509022159"
+                     org.json [221]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY phasereditor.ui 4 0 2015-09-14 16:20:29.439
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: phasereditor.ui [249]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY phasereditor.webrun.core 4 0 2015-09-14 16:20:29.440
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: phasereditor.webrun.core [250]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY phasereditor.webrun.ui 4 0 2015-09-14 16:20:29.442
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: phasereditor.webrun.ui [251]
+  Unresolved requirement: Require-Bundle: phasereditor.webrun.core; bundle-version="1.0.0"
+    -> Bundle-SymbolicName: phasereditor.webrun.core; bundle-version="1.0.0.201509022159"
+       phasereditor.webrun.core [250]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY phasereditor.chains.core 2 0 2015-09-14 16:20:29.475
+!MESSAGE Could not resolve module: phasereditor.chains.core [238]
+  Unresolved requirement: Require-Bundle: phasereditor.inspect.core; bundle-version="1.0.0"
+    -> Bundle-SymbolicName: phasereditor.inspect.core; bundle-version="1.0.0.201509022159"; singleton:="true"
+       phasereditor.inspect.core [241]
+         Unresolved requirement: Require-Bundle: phasereditor.inspect.core.resources; bundle-version="1.0.0"
+           -> Bundle-SymbolicName: phasereditor.inspect.core.resources; bundle-version="1.0.0.201509022159"
+              phasereditor.inspect.core.resources [242]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+
+!ENTRY phasereditor.optipng.ui 2 0 2015-09-14 16:20:29.475
+!MESSAGE Could not resolve module: phasereditor.optipng.ui [245]
+  Unresolved requirement: Require-Bundle: phasereditor.optipng.core; bundle-version="1.0.0"
+    -> Bundle-SymbolicName: phasereditor.optipng.core; bundle-version="1.0.0.201509022159"
+       phasereditor.optipng.core [243]
+         Unresolved requirement: Require-Bundle: phasereditor.ui; bundle-version="1.0.0"
+           -> Bundle-SymbolicName: phasereditor.ui; bundle-version="1.0.0.201509022159"; singleton:="true"
+              phasereditor.ui [249]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+
+!ENTRY phasereditor.atlas.core 2 0 2015-09-14 16:20:29.476
+!MESSAGE Could not resolve module: phasereditor.atlas.core [232]
+  Unresolved requirement: Require-Bundle: org.json; bundle-version="1.0.0"
+    -> Bundle-SymbolicName: org.json; bundle-version="1.0.0.201509022159"
+       org.json [221]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+
+!ENTRY phasereditor.audio.core.win32 2 0 2015-09-14 16:20:29.476
+!MESSAGE Could not resolve module: phasereditor.audio.core.win32 [235]
+  Unresolved requirement: Fragment-Host: phasereditor.audio.core; bundle-version="1.0.0"
+    -> Bundle-SymbolicName: phasereditor.audio.core; bundle-version="1.0.0.201509022159"
+       phasereditor.audio.core [234]
+         Unresolved requirement: Require-Bundle: phasereditor.ui; bundle-version="1.0.0"
+           -> Bundle-SymbolicName: phasereditor.ui; bundle-version="1.0.0.201509022159"; singleton:="true"
+              phasereditor.ui [249]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+
+!ENTRY phasereditor.audio.core 2 0 2015-09-14 16:20:29.477
+!MESSAGE Could not resolve module: phasereditor.audio.core [234]
+  Unresolved requirement: Require-Bundle: phasereditor.ui; bundle-version="1.0.0"
+    -> Bundle-SymbolicName: phasereditor.ui; bundle-version="1.0.0.201509022159"; singleton:="true"
+       phasereditor.ui [249]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+
+!ENTRY phasereditor.optipng.core.win32 2 0 2015-09-14 16:20:29.477
+!MESSAGE Could not resolve module: phasereditor.optipng.core.win32 [244]
+  Unresolved requirement: Fragment-Host: phasereditor.optipng.core; bundle-version="1.0.0"
+    -> Bundle-SymbolicName: phasereditor.optipng.core; bundle-version="1.0.0.201509022159"
+       phasereditor.optipng.core [243]
+         Unresolved requirement: Require-Bundle: phasereditor.ui; bundle-version="1.0.0"
+           -> Bundle-SymbolicName: phasereditor.ui; bundle-version="1.0.0.201509022159"; singleton:="true"
+              phasereditor.ui [249]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+
+!ENTRY phasereditor.project.ui 2 0 2015-09-14 16:20:29.478
+!MESSAGE Could not resolve module: phasereditor.project.ui [247]
+  Unresolved requirement: Require-Bundle: phasereditor.project.core; bundle-version="1.0.0"
+    -> Bundle-SymbolicName: phasereditor.project.core; bundle-version="1.0.0.201509022159"; singleton:="true"
+       phasereditor.project.core [246]
+         Unresolved requirement: Require-Bundle: phasereditor.inspect.core; bundle-version="1.0.0"
+           -> Bundle-SymbolicName: phasereditor.inspect.core; bundle-version="1.0.0.201509022159"; singleton:="true"
+              phasereditor.inspect.core [241]
+                Unresolved requirement: Require-Bundle: phasereditor.inspect.core.resources; bundle-version="1.0.0"
+                  -> Bundle-SymbolicName: phasereditor.inspect.core.resources; bundle-version="1.0.0.201509022159"
+                     phasereditor.inspect.core.resources [242]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+
+!ENTRY phasereditor.ide 2 0 2015-09-14 16:20:29.478
+!MESSAGE Could not resolve module: phasereditor.ide [240]
+  Unresolved requirement: Require-Bundle: phasereditor.assetpack.core; bundle-version="1.0.0"
+    -> Bundle-SymbolicName: phasereditor.assetpack.core; bundle-version="1.0.0.201509022159"; singleton:="true"
+       phasereditor.assetpack.core [230]
+         Unresolved requirement: Require-Bundle: org.json; bundle-version="1.0.0"
+           -> Bundle-SymbolicName: org.json; bundle-version="1.0.0.201509022159"
+              org.json [221]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+
+!ENTRY org.json 2 0 2015-09-14 16:20:29.478
+!MESSAGE Could not resolve module: org.json [221]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+
+!ENTRY phasereditor.project.core 2 0 2015-09-14 16:20:29.479
+!MESSAGE Could not resolve module: phasereditor.project.core [246]
+  Unresolved requirement: Require-Bundle: phasereditor.inspect.core; bundle-version="1.0.0"
+    -> Bundle-SymbolicName: phasereditor.inspect.core; bundle-version="1.0.0.201509022159"; singleton:="true"
+       phasereditor.inspect.core [241]
+         Unresolved requirement: Require-Bundle: phasereditor.inspect.core.resources; bundle-version="1.0.0"
+           -> Bundle-SymbolicName: phasereditor.inspect.core.resources; bundle-version="1.0.0.201509022159"
+              phasereditor.inspect.core.resources [242]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+
+!ENTRY phasereditor.webrun.ui 2 0 2015-09-14 16:20:29.479
+!MESSAGE Could not resolve module: phasereditor.webrun.ui [251]
+  Unresolved requirement: Require-Bundle: phasereditor.webrun.core; bundle-version="1.0.0"
+    -> Bundle-SymbolicName: phasereditor.webrun.core; bundle-version="1.0.0.201509022159"
+       phasereditor.webrun.core [250]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+
+!ENTRY phasereditor.assetpack.ui 2 0 2015-09-14 16:20:29.479
+!MESSAGE Could not resolve module: phasereditor.assetpack.ui [231]
+  Unresolved requirement: Require-Bundle: phasereditor.assetpack.core; bundle-version="1.0.0"
+    -> Bundle-SymbolicName: phasereditor.assetpack.core; bundle-version="1.0.0.201509022159"; singleton:="true"
+       phasereditor.assetpack.core [230]
+         Unresolved requirement: Require-Bundle: org.json; bundle-version="1.0.0"
+           -> Bundle-SymbolicName: org.json; bundle-version="1.0.0.201509022159"
+              org.json [221]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+
+!ENTRY phasereditor.audiosprite.ui 2 0 2015-09-14 16:20:29.480
+!MESSAGE Could not resolve module: phasereditor.audiosprite.ui [237]
+  Unresolved requirement: Require-Bundle: phasereditor.audio.core; bundle-version="1.0.0"
+    -> Bundle-SymbolicName: phasereditor.audio.core; bundle-version="1.0.0.201509022159"
+       phasereditor.audio.core [234]
+         Unresolved requirement: Require-Bundle: phasereditor.ui; bundle-version="1.0.0"
+           -> Bundle-SymbolicName: phasereditor.ui; bundle-version="1.0.0.201509022159"; singleton:="true"
+              phasereditor.ui [249]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+
+!ENTRY phasereditor.text.ui 2 0 2015-09-14 16:20:29.480
+!MESSAGE Could not resolve module: phasereditor.text.ui [248]
+  Unresolved requirement: Require-Bundle: phasereditor.assetpack.ui; bundle-version="1.0.0"
+    -> Bundle-SymbolicName: phasereditor.assetpack.ui; bundle-version="1.0.0.201509022159"; singleton:="true"
+       phasereditor.assetpack.ui [231]
+         Unresolved requirement: Require-Bundle: phasereditor.assetpack.core; bundle-version="1.0.0"
+           -> Bundle-SymbolicName: phasereditor.assetpack.core; bundle-version="1.0.0.201509022159"; singleton:="true"
+              phasereditor.assetpack.core [230]
+                Unresolved requirement: Require-Bundle: org.json; bundle-version="1.0.0"
+                  -> Bundle-SymbolicName: org.json; bundle-version="1.0.0.201509022159"
+                     org.json [221]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+
+!ENTRY phasereditor.optipng.core 2 0 2015-09-14 16:20:29.480
+!MESSAGE Could not resolve module: phasereditor.optipng.core [243]
+  Unresolved requirement: Require-Bundle: phasereditor.ui; bundle-version="1.0.0"
+    -> Bundle-SymbolicName: phasereditor.ui; bundle-version="1.0.0.201509022159"; singleton:="true"
+       phasereditor.ui [249]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+
+!ENTRY phasereditor.atlas.ui 2 0 2015-09-14 16:20:29.481
+!MESSAGE Could not resolve module: phasereditor.atlas.ui [233]
+  Unresolved requirement: Require-Bundle: phasereditor.project.core; bundle-version="1.0.0"
+    -> Bundle-SymbolicName: phasereditor.project.core; bundle-version="1.0.0.201509022159"; singleton:="true"
+       phasereditor.project.core [246]
+         Unresolved requirement: Require-Bundle: phasereditor.inspect.core; bundle-version="1.0.0"
+           -> Bundle-SymbolicName: phasereditor.inspect.core; bundle-version="1.0.0.201509022159"; singleton:="true"
+              phasereditor.inspect.core [241]
+                Unresolved requirement: Require-Bundle: phasereditor.inspect.core.resources; bundle-version="1.0.0"
+                  -> Bundle-SymbolicName: phasereditor.inspect.core.resources; bundle-version="1.0.0.201509022159"
+                     phasereditor.inspect.core.resources [242]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+
+!ENTRY phasereditor.audiosprite.core 2 0 2015-09-14 16:20:29.481
+!MESSAGE Could not resolve module: phasereditor.audiosprite.core [236]
+  Unresolved requirement: Require-Bundle: org.json; bundle-version="1.0.0"
+    -> Bundle-SymbolicName: org.json; bundle-version="1.0.0.201509022159"
+       org.json [221]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+
+!ENTRY phasereditor.ui 2 0 2015-09-14 16:20:29.481
+!MESSAGE Could not resolve module: phasereditor.ui [249]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+
+!ENTRY phasereditor.webrun.core 2 0 2015-09-14 16:20:29.482
+!MESSAGE Could not resolve module: phasereditor.webrun.core [250]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+
+!ENTRY phasereditor.inspect.core 2 0 2015-09-14 16:20:29.482
+!MESSAGE Could not resolve module: phasereditor.inspect.core [241]
+  Unresolved requirement: Require-Bundle: phasereditor.inspect.core.resources; bundle-version="1.0.0"
+    -> Bundle-SymbolicName: phasereditor.inspect.core.resources; bundle-version="1.0.0.201509022159"
+       phasereditor.inspect.core.resources [242]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+
+!ENTRY phasereditor.inspect.core.resources 2 0 2015-09-14 16:20:29.482
+!MESSAGE Could not resolve module: phasereditor.inspect.core.resources [242]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+
+!ENTRY phasereditor.chains.ui 2 0 2015-09-14 16:20:29.483
+!MESSAGE Could not resolve module: phasereditor.chains.ui [239]
+  Unresolved requirement: Require-Bundle: phasereditor.chains.core; bundle-version="1.0.0"
+    -> Bundle-SymbolicName: phasereditor.chains.core; bundle-version="1.0.0.201509022159"
+       phasereditor.chains.core [238]
+         Unresolved requirement: Require-Bundle: phasereditor.inspect.core; bundle-version="1.0.0"
+           -> Bundle-SymbolicName: phasereditor.inspect.core; bundle-version="1.0.0.201509022159"; singleton:="true"
+              phasereditor.inspect.core [241]
+                Unresolved requirement: Require-Bundle: phasereditor.inspect.core.resources; bundle-version="1.0.0"
+                  -> Bundle-SymbolicName: phasereditor.inspect.core.resources; bundle-version="1.0.0.201509022159"
+                     phasereditor.inspect.core.resources [242]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+
+!ENTRY phasereditor.assetpack.core 2 0 2015-09-14 16:20:29.483
+!MESSAGE Could not resolve module: phasereditor.assetpack.core [230]
+  Unresolved requirement: Require-Bundle: org.json; bundle-version="1.0.0"
+    -> Bundle-SymbolicName: org.json; bundle-version="1.0.0.201509022159"
+       org.json [221]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+
+!ENTRY org.eclipse.osgi 4 0 2015-09-14 16:20:29.485
+!MESSAGE Application error
+!STACK 1
+java.lang.RuntimeException: Application "phasereditor.ide.application" could not be found in the registry. The applications available are: org.eclipse.ant.core.antRunner, org.eclipse.e4.ui.workbench.swt.E4Application, org.eclipse.e4.ui.workbench.swt.GenTopic, org.eclipse.equinox.app.error, org.eclipse.equinox.p2.director, org.eclipse.equinox.p2.garbagecollector.application, org.eclipse.equinox.p2.publisher.InstallPublisher, org.eclipse.equinox.p2.publisher.EclipseGenerator, org.eclipse.equinox.p2.publisher.ProductPublisher, org.eclipse.equinox.p2.publisher.FeaturesAndBundlesPublisher, org.eclipse.equinox.p2.repository.repo2runnable, org.eclipse.equinox.p2.repository.metadataverifier, org.eclipse.equinox.p2.artifact.repository.mirrorApplication, org.eclipse.equinox.p2.metadata.repository.mirrorApplication, org.eclipse.equinox.p2.updatesite.UpdateSitePublisher, org.eclipse.equinox.p2.publisher.UpdateSitePublisher, org.eclipse.equinox.p2.publisher.CategoryPublisher, org.eclipse.help.base.infocenterApplication, org.eclipse.help.base.helpApplication, org.eclipse.help.base.indexTool, org.eclipse.ui.ide.workbench, org.eclipse.wst.jsdt.core.JavaCodeFormatter.
+	at org.eclipse.equinox.internal.app.EclipseAppContainer.startDefaultApp(EclipseAppContainer.java:248)
+	at org.eclipse.equinox.internal.app.MainApplicationLauncher.run(MainApplicationLauncher.java:29)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)

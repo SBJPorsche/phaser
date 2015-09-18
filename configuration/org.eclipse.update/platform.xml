@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config date="1442217382800" transient="false" version="3.0">
+<site enabled="true" policy="USER-EXCLUDE" updateable="true" url="platform:/base/">
+<feature id="phasereditor.ide.feature" url="features/phasereditor.ide.feature_1.0.0.201509022159/" version="1.0.0.201509022159">
+</feature>
+</site>
+</config>
