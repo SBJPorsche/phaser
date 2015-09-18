@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: phasereditor.optipng.core.win32
+Bundle-Name: Phaser Editor - Opti PNG Win32
+Bundle-Version: 1.0.0.201509022159
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Eclipse-PlatformFilter: (osgi.os=win32)
+Fragment-Host: phasereditor.optipng.core;bundle-version="1.0.0"
+Eclipse-BundleShape: dir
+
+

@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: phasereditor.inspect.core.resources
+Export-Package: phasereditor.inspect.core.resources
+Bundle-Name: Phaser Editor - Inspect Core Resources
+Bundle-Version: 1.0.0.201509022159
+Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime
+Bundle-ManifestVersion: 2
+Bundle-Activator: phasereditor.inspect.core.resources.Activator
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Eclipse-BundleShape: dir
+
+

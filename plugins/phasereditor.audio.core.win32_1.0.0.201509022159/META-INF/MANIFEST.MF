@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: phasereditor.audio.core.win32
+Bundle-Name: Phaser Editor - Audio Core Win32
+Bundle-Version: 1.0.0.201509022159
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Eclipse-PlatformFilter: (osgi.os=win32)
+Fragment-Host: phasereditor.audio.core;bundle-version="1.0.0"
+Eclipse-BundleShape: dir
+
+
