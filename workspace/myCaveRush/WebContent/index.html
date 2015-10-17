@@ -46,8 +46,8 @@
 
 (function () {
 	var gameRatio = window.innerWidth/window.innerHeight;	
-	var game = new Phaser.Game(720,Math.ceil(720/gameRatio), Phaser.AUTO,'game');
-
+	//var game = new Phaser.Game(720,Math.ceil(720/gameRatio), Phaser.AUTO,'game');
+    var game = new Phaser.Game(720,1280, Phaser.AUTO,'game');
 	game.state.add('Boot', BasicGame.Boot);
 	game.state.add('Preloader', BasicGame.Preloader);
 	game.state.add('MainMenu', BasicGame.MainMenu);
