@@ -23,8 +23,7 @@ BasicGame.Preloader.prototype = {
 		this.load.audio('titleMusic', 'sounds/bg1FightLoop.mp3');
 		// this.load.bitmapFont('caslon', 'fonts/caslon.png', 'fonts/caslon.xml');
 		this.load.image('startNormal', 'images/kp-qianghua.png');
-		this.load.image('startPressed', 'images/kp-qianghual.png');
-		this.load.image('startDisabled', 'images/kp-qianghuaan.png');
+		this.load.image('walls', 'images/walls.png');
 	},
 
 	create: function () {

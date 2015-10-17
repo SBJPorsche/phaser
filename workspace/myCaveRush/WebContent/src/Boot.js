@@ -24,7 +24,7 @@ BasicGame.Boot.prototype = {
         if (this.game.device.desktop)
         {
             this.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
-            // this.scale.setMinMax(480, 260, 1024, 768);
+            this.scale.setMinMax(360, 640, 720, 1280);
             this.scale.pageAlignHorizontally = true;
             this.scale.pageAlignVertically = true;
         }
@@ -44,11 +44,8 @@ BasicGame.Boot.prototype = {
     },
 
     preload: function () {
-
-        //  Here we load the assets required for our preloader (in this case a background and a loading bar)
         this.load.image('preloaderBackground', 'images/bg01.png');
         this.load.image('preloaderBar', 'images/jz_ggtiao.png');
-
     },
 
     create: function () {
@@ -69,9 +66,6 @@ BasicGame.Boot.prototype = {
         if(!this.game.device.desktop){
           document.getElementById("turn").style.display="block";
         }
-        // BasicGame.orientated = false;
-
-        // document.getElementById('orientation').style.display = 'block';
     },
 
     leaveIncorrectOrientation: function () {
@@ -85,9 +79,6 @@ BasicGame.Boot.prototype = {
           }
           document.getElementById("turn").style.display="none";
         }
-        // BasicGame.orientated = true;
-
-        // document.getElementById('orientation').style.display = 'none';
     }
 
 };

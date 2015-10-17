@@ -30,7 +30,8 @@ BasicGame.Game.prototype = {
 
         //  Honestly, just about anything could go here. It's YOUR game after all. Eat your heart out!
         // this.add.sprite(this.world.centerX,this.world.centerY, 'gamebg').anchor.set(0.5,0.5);
-        this.add.tileSprite(0,0,this.game.width,this.game.height,'titlepage').autoScroll(0,-100); //背景图
+        this.add.tileSprite(0,0,this.game.width,this.game.height,'gamebg').autoScroll(0,-100); //背景图
+        this.add.tileSprite(0,0,this.game.width,this.game.height,'walls').autoScroll(0,-200); //背景图
     },
 
     update: function () {
